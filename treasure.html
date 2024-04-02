@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <STYLE>A {text-decoration: none;} </STYLE>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Treasure</title>
+    <link rel="stylesheet" href="treasure.css">
+    <script src="index.js" defer></script>
+    <link rel="icon" sizes="16x16" href="media/icon16.png">
+    <link rel="icon" sizes="32x32" href="media/icon32.png">
+</head>
+<body>
+    <div class="abajo">
+        <h3>^^^^^^<br>
+            clic aquí</h3>
+    </div>
+    <div class="treasure-map" onclick="activateGifAnimation(this)">
+        <img src="media/camino.png" class="path-image">
+        <button id="island1" class="island-button island1" onclick="openPopup(this)" disabled></button>
+        <button id="island2" class="island-button island2" onclick="openPopup(this)" disabled></button>
+        <button id="island3" class="island-button island3" onclick="openPopup(this)" disabled></button>
+        <button id="island4" class="island-button island4" onclick="openPopup(this)" disabled></button>
+        <button id="island5" class="island-button island5" onclick="openPopup(this)" disabled></button>
+        <button id="island6" class="island-button island6" onclick="openPopup(this)" disabled></button>
+        <button id="island7" class="island-button island7" onclick="openPopup(this)" disabled></button>
+        <button id="island8" class="island-button island8" onclick="openPopup(this)" disabled></button>
+        <form action="index.html">
+            <button id="brujula" class="island-button brujula" onmouseover="changeText2(this)"></button>
+        </form>
+
+        <div style="text-align: center" class="popup-container" id="popup-island1">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">ISLA HMMMMM <span class="popup-close" onclick="closePopup('popup-island1')"> x</span> </h3>
+                <p>El nombre de está isla no fue dada por Kyo.<br>
+                    ¿No te hace preguntarte el porqué de ese nombre?<br>
+                    Si lo adivinas, obtendrás una sorpresa o (❛ᴗ❛) o</p>
+                <img src="media/kyo.gif" width="90" height="90"><br>
+                <a id="link-popup-island1" target="_blank" href="https://www.facebook.com/Bowauwu/posts/pfbid0DemwMmnJyVi5JTKjsZQAf3sEGhDiTzwQtNGkixdmPT7kY9TivRTt3WcHgoCENrfgl" style="display: none">:3</a>
+
+                <input type="text" id="answer-popup-island1" placeholder="Y el objeto es...">
+
+                <button onclick="submitAnswer('popup-island1')">Enviar</button>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island2">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">ISLA EEEEEEE <span class="popup-close" onclick="closePopup('popup-island2')"> x</span> </h3>
+                <p>En teyvat hay climas fríos <br>
+                    y vagabundos sombríos<br>
+                    Un enigma en la noche, un desafío en la aurora,<br>
+                    ¿quién es el errante? ¡Escríbelo ahora!
+                </p>
+                <img src="media/haru.gif" width="120" height="90"><br>
+                <a id="link-popup-island2" target="_blank" href="https://m.facebook.com/story.php?story_fbid=pfbid0zZREyXLwKqo7ybq7psmrSZxEcTmHfmfbqHjJbVHPDbSLPArdQHxerCMSJrUWmARcl&id=100074149982718&mibextid=2JQ9oc" style="display: none">owo</a>
+
+                <input type="text" id="answer-popup-island2" placeholder="El errante es...">
+
+                <button onclick="submitAnswer('popup-island2')">Enviar</button>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island3">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">ISLA PSICOTRÓPICA<span class="popup-close" onclick="closePopup('popup-island3')"> x</span> </h3>
+                <p>En la lucha, mi fuerza es fenomenal,<br>
+                    un guerrero poderoso, sin igual.<br>
+                    Con risa estruendosa y corazón gigante,<br>
+                    mi nombre es mi identidad, soy vibrante.
+                </p>
+                <img src="media/raku.gif" width="100" height="80"><br>
+                <a id="link-popup-island3" target="_blank" href="https://www.facebook.com/notifications" style="display: none">Una notificación ha aparecido</a>
+
+                <input type="text" id="answer-popup-island3" placeholder="👹">
+
+                <button onclick="submitAnswer('popup-island3')">Enviar</button>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island4">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">ISLA DE LA CHAMBA<span class="popup-close" onclick="closePopup('popup-island4')"> x</span> </h3>
+                <p>Tomando en cuenta la ubicación de tus regalos hasta ahora<br>
+                   ¿dónde crees que puedan estar los siguientes?<br>
+                </p>
+                <img src="media/nosabiaqdibujarasiqgato.gif" width="90" height="80"><br>
+                <a id="link-popup-island4" style="display: none">
+                    <a target="_blank" href="https://www.facebook.com/Lyniethh/posts/pfbid0347JWTVwatRgjm6NvgjGfZrvJZNQ2cwSjMWn9BndSvgSHjRU3rS3iVAAHj715mvHyl">Joe</button>
+                    <a target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid02TJZ5KBfbyfHAf8rUm4iM2aUarTJQ7r8CEaR4UKRJUbDkB6zbLApEfAPU3xTFqvKpl&id=100005164215910">Ro</button>
+                </a>
+                <input type="text" id="answer-popup-island4" placeholder="">
+
+                <button onclick="submitAnswer('popup-island4')">Enviar</button>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island5">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">EL QUE NO LEE DISCORD<span class="popup-close" onclick="closePopup('popup-island5')"> x</span> </h3>
+                <p>Este regalo es distinto, así que me puedo ahorrar la <br>
+                    busqueda en google por adivinanzas, solo palabritas de<br>
+                    amor para mi mujer :3
+                </p>
+                <img src="media/enrique.gif" width="140" height="90"><br>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island6">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">ISLA AUUUUU<span class="popup-close" onclick="closePopup('popup-island6')"> x</span> </h3>
+                <p>Como Manu quiso ser un lobo (si, es la silueta de un lobo <br>
+                    aullando a la luna), el mapa se volvió más furro de lo que<br>
+                    uno pensaría. No estoy segura de su regalo, pero aquí hay<br>
+                    un regalo que siempre puedes cobrar
+                </p>
+                <img src="media/manu.gif" width="90" height="90"><br>
+                <a target="_blank" id="link-popup-island6" href="https://cdn.discordapp.com/attachments/424292381412556811/1150164508174733393/image.png">un lobo siempre cuida a su loba</a>
+
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island7">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">JOB<span class="popup-close" onclick="closePopup('popup-island7')"> x</span> </h3>
+                <p>Job aplicó la de Manu, <br>
+                    así que tiene el mismo regalo.
+                </p>
+                <img src="media/job.jpg" width="90" height="90"><br>
+                <a target="_blank" id="link-popup-island7" href="https://cdn.discordapp.com/attachments/424292381412556811/1150164508174733393/image.png">miau o como hacian las tortugas</a>
+            </div>
+        </div>
+
+        <div style="text-align: center" class="popup-container" id="popup-island8">
+            <div class="popup-content">
+                
+                <h3 class= "titulo">My heart<span class="popup-close" onclick="closePopup('popup-island8')"> x</span> </h3>
+                <p>A likes B, C likes D<br>
+                    E likes F and G likes H<br>
+                    So who does I like?
+                </p>
+                <img src="media/lu.gif" width="90" height="90"><br>
+                <a id="link-popup-island8" style="display: none">¿No quieres visitar mi relajatetera?</a>
+
+                <input type="text" id="answer-popup-island8" placeholder="¿♡?">
+
+                <button onclick="submitAnswer('popup-island8')">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

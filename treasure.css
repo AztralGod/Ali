@@ -1,0 +1,143 @@
+.abajo{
+    position: absolute;
+    margin-top: 35%;
+    align-items: center;
+    text-align: center;
+    margin-left: 45%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(210, 50%, 15%);
+    background-image: linear-gradient(135deg, #ffc0c0, #CFC0E4);
+    border: 1px solid #dd9de8;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -5px;
+    margin-bottom: -7px;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #231f23;
+}
+
+.treasure-map.active-popup {
+    z-index: 9998;
+}
+
+/* styles.css */
+body{
+    background-color: #accce7;
+    cursor: url('media/cursor.png'), auto;
+}
+
+.treasure-map {
+    margin-top: -8px;
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+    background-image: url('media/mapainicio.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.path-image {
+    position: absolute;
+    width: 98vw;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.brujula{
+    background-image: url('media/brujula.png');
+    top: 445px;
+    left: 1275px;
+}
+
+.brujula:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.island-button {
+    position: absolute;
+    width: 14vw;
+    height: 17vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.island1 {
+    top: 19.5%;
+    left: 8%;
+    background-image: url('media/islakyo.png');
+}
+
+.island2 {
+    top: 21%;
+    left: 32%;
+    background-image: url('media/islaharu.png');
+}
+
+.island3 {
+    top: 21.5%;
+    left: 55%;
+    background-image: url('media/islaraku.png');
+}
+
+.island4 {
+    top: 36%;
+    left: 74%;
+    background-image: url('media/islajoero.png');
+}
+
+.island5 {
+    top: 61%;
+    left: 62%;
+    background-image: url('media/islaenrique.png');
+}
+
+.island6 {
+    top: 61%;
+    left: 33%;
+    background-image: url('media/islamanu.png');
+}
+
+.island7 {
+    top: 43%;
+    left: 15%;
+    background-image: url('media/islajob.png');
+}
+
+.island8 {
+    top: 41%;
+    left: 45%;
+    background-image: url('media/islacorazon.png');
+}
