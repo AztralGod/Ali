@@ -54,16 +54,22 @@
     <div class="layer-2 center"></div>
     <div class="layer-3 center"></div>
   </div>
-  <audio controls autoplay>
-    <source src="media/Lana Del Rey-Blue Jeans.mp3" type="audio/mpeg">
-    Tu navegador no admite la reproducción de audio.
-  </audio>
-  <script>
-    // Obtén el elemento de audio por su ID
-    var audio = document.getElementById("myAudio");
+      <!-- Agrega la etiqueta <audio> para reproducir la música -->
+    <audio controls autoplay loop>
+        <source src="ruta-de-la-cancion.mp3" type="audio/mpeg">
+        <!-- Cambia "ruta-de-la-cancion.mp3" por la ubicación de tu archivo de audio -->
+    </audio>
 
-    // Reproduce el audio automáticamente al cargar la página
-    audio.play();
-</script>
+    <!-- Opcional: Puedes agregar un botón para reproducir manualmente -->
+    <button onclick="reproducirMusica()">Reproducir</button>
+
+    <script>
+        // Función para reproducir la música manualmente
+        function reproducirMusica() {
+            const etiquetaAudio = document.createElement("audio");
+            etiquetaAudio.setAttribute("src", "ruta-de-la-cancion.mp3");
+            etiquetaAudio.play();
+        }
+    </script>
 </body>
 </html>
